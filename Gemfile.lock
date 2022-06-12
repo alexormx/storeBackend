@@ -85,6 +85,10 @@ GEM
       devise (~> 4.0)
       warden-jwt_auth (~> 0.6)
     digest (3.1.0)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     dry-auto_inject (0.9.0)
       dry-container (>= 0.3.4)
     dry-configurable (0.15.0)
@@ -112,6 +116,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.5.2)
     net-imap (0.2.3)
@@ -129,6 +134,9 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.6)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -191,6 +199,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -198,6 +207,7 @@ DEPENDENCIES
   debug
   devise (~> 4.8)
   devise-jwt (~> 0.9.0)
+  dotenv-rails
   puma (~> 5.0)
   rack-cors (~> 1.1)
   rails (~> 7.0.2, >= 7.0.2.3)
